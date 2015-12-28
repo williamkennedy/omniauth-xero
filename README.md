@@ -1,4 +1,4 @@
-# Omniauth::Xero
+# OmniAuth::Xero
 
 [OmniAuth](https://github.com/intridea/omniauth) strategy for [Xero partner](http://developer.xero.com/partner/) applications.
 
