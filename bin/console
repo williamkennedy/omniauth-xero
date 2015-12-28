@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "omniauth/xero"
+
+require "irb"
+IRB.start
