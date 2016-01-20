@@ -13,9 +13,10 @@ module OmniAuth
         @xero = Xeroizer::PartnerApplication.new(
           consumer_key,
           consumer_secret,
-          options[:private_key_file],
-          options[:ssl_client_cert],
-          options[:ssl_client_key]
+          options.delete(:private_key_file),
+          options.delete(:ssl_client_cert),
+          options.delete(:ssl_client_key),
+          options
         )
 
         super(app, consumer_key, consumer_secret, options, &block)
