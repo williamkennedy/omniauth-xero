@@ -98,7 +98,7 @@ module OmniAuth
       private
 
       def user
-        @user ||= @xero.User.first(is_subscriber: true)
+        @user ||= @xero.User.all(is_subscriber: true).find{|user| user.is_subscriber }
       end
 
       def organisation
