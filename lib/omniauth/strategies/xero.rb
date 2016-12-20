@@ -13,7 +13,7 @@ module OmniAuth
         @xero = Xeroizer::PrivateApplication.new(
           consumer_key,
           consumer_secret,
-          options[:private_key_file]
+          options[:private_key_file],
           options
         )
 
