@@ -27,9 +27,7 @@ use OmniAuth::Builder do
   provider :xero,
     ENV['XERO_CLIENT_ID'],
     ENV['XERO_CLIENT_SECRET'],
-    private_key_file: '/path/to/privatekey.pem',
-    ssl_client_cert: '/path/to/entrust-cert.pem',
-    ssl_client_key: '/path/to/entrust-private-nopass.pem'
+    private_key_file: '/path/to/privatekey.pem'
 end
 ```
 
